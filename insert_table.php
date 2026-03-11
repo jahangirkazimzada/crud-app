@@ -10,7 +10,8 @@
     $workers = [
         ["Cahangir", "Kazimzada", "200229", "23"],
         ["Cavid", "Kazimzada", "199815", "27"],
-        ["Agamusa", "Kazimzada", "201117", "15"]
+        ["Agamusa", "Kazimzada", "201117", "15"],
+        ["Ismayil", "Huseynli", "200204", "24"]
     ];
 
     foreach($workers as $w){
