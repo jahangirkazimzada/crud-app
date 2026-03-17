@@ -55,8 +55,8 @@
                         <td><?php echo $row["city"] ?></td>
                         <td><?php echo $row["personId"] ?></td>
                         <td>
-                            <a href="delete.php?id=<?php echo $row['id'] ?>" class = "delete-btn" onclick = "return confirm('Bu qeydi silmek istediyinize eminsiniz?')">Delete</a>
-                            
+                            <a href="delete.php?id=<?php echo $row["id"]?>" class = "delete-btn" 
+                            onclick = "return confirm('Melumati silmek isteyirsinizmi?')">Delete</a>
                         </td>
                     </tr>
                     
@@ -64,10 +64,11 @@
             </tbody>
         </table>
     </div>
-
-    
-    
-    
+    <div class="container">
+        <form action="delete.php" method="GET">
+            <input type="submit" value="Delete All" name = "deleteAllData">
+        </form>
+    </div>
     <script>
         document.querySelectorAll(".row") . forEach((element, index) => {
             if((index += 1) % 2 !== 0){
